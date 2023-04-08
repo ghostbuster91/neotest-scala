@@ -62,7 +62,7 @@ function ScalaNeotestAdapter.discover_positions(path)
 	  (object_definition
 	   name: (identifier) @namespace.name)
 	   @namespace.definition
-	  
+	
       (class_definition
       name: (identifier) @namespace.name)
       @namespace.definition
@@ -97,7 +97,7 @@ end
 
 local function get_framework()
     -- TODO: Automatically detect framework based on build.sbt
-    return "utest"
+    return "scalatest"
 end
 
 ---Get first project name from bloop projects.
